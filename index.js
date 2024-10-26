@@ -11,3 +11,6 @@ data.dataSync();
 
 
 const test = tf.tensor([[[1], [2]], [[3], [4]]]);
+console.log(tf.memory())
+test.dispose() // libere la memoire allouer pour le tensor test 
+console.log(tf.memory())
