@@ -5,9 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/toxicity"></script>
     <script src="index.js"></script>
 </head>
 <body>
+
+    <h1>Analyse de Toxicité du Texte</h1>
+    
+    <!-- Champ de texte et bouton de soumission -->
+    <input type="text" id="myText" placeholder="Entrez du texte ici" />
+    <input type="submit" value="Analyser" onclick="classify()">
+
+    <p id="result"></p> <!-- Pour afficher le résultat de l'analyse -->
+    
     
 </body>
 </html>
